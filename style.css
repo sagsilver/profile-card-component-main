@@ -1,0 +1,72 @@
+:root {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+body {
+  margin: 0;
+  padding-top: 30px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: var(--Dark-cyan);
+  background-image: url("./images/bg-pattern-top.svg"),
+    url("./images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: left -100% top 150%, right -70% bottom 210%;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  margin: 100px;
+  padding-top: 80px;
+  max-width: 375px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  background: white url("./images/bg-pattern-card.svg") repeat-x;
+  border-radius: 20px;
+  -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.46);
+  -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.46);
+  box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.46);
+  overflow: hidden;
+  text-align: center;
+}
+.card h1 {
+  margin: 0;
+  margin-top: 25px;
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 25px;
+}
+.card h1 span {
+  margin-left: 8px;
+  color: var(--Dark-grayish-blue);
+  font-size: 22px;
+  font-weight: 400;
+}
+.card h2 {
+  margin-top: 12px;
+  margin-bottom: 30px;
+  color: var(--Dark-grayish-blue);
+  font-size: 20px;
+  font-weight: 400;
+}
+.image {
+  border-radius: 50%;
+  border: 8px solid white;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid var(--Dark-gray);
+  padding: 10px 0;
+}
+.social h3 {
+  font-size: 25px;
+}
+.social h3 small {
+  display: block;
+  margin-top: 5px;
+  color: var(--Dark-grayish-blue);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
